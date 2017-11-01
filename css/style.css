@@ -26,6 +26,7 @@ Developer @GA in NYC
     clear: both;
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -35,15 +36,15 @@ html {
 }
 
 
-body {
+/*body {
 
 }
 
-footer {
+footer {*/
 
-img {
+/*img {
 	max-width: 100%;
-}
+}*/
 
 
 /******************************************
@@ -51,6 +52,7 @@ img {
 /*******************************************/
 
 /* Center the container */
+
 .container {
 	display: block;
   	margin: 0 auto;
@@ -60,7 +62,6 @@ img {
 .home_header {
 	height: 100vh;
 }
-
 
 
 /******************************************
@@ -75,7 +76,7 @@ img {
 .social_media li {
 	display: inline;
 	float: right;
-}
+/
 /*header .homepage {
 	background-image: url("../images/header_bg.jpg");
 	background-size: cover;
