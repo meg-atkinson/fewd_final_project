@@ -52,20 +52,25 @@ a {
 	color: white;
 }
 
+img {
+	object-fit: contain;
+	width: 100%;
+}
+
 /******************************************
 /* FONT STYLES
 /*******************************************/
 
-h1, h2, a, p {
+h1, h2, a, p, .space-title-placeholder, footer {
 	font-family: 'Cormorant Garamond', serif;
 }
 
-.space-title {
+span {
 	font-family: 'Roboto Mono', monospace;
 }
 
 nav a {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Lora', serif;
 	text-transform: uppercase;
 }
 
@@ -92,22 +97,21 @@ nav a {
 	float: left;
 }
 
-.teasers-block {
+.teasers-block, .teasers-small-block {
 	height: 0;
 	margin: 1.25%;
+	background: no-repeat center;
+	background-size: cover;
+}
+
+.teasers-block {
 	padding-bottom: 97.5%;
 	width: 97.5%;
-	border: 1px solid;
 }
 
 .teasers-small-block {
-	height: 0;
-	margin: 1.25%;
 	padding-bottom: 47.5%;
-	width: 47.5%;
-	border: 1px solid;
-	
-	
+	width: 47.5%;	
 }
 
 .big-teaser-content {
@@ -115,7 +119,7 @@ nav a {
 }
 
 .big-teaser-content, .small-teaser-content {
-	padding: 1rem;	
+	padding: 1rem;
 }
 
 
@@ -129,6 +133,11 @@ nav a {
 	background: url("../images/flags.jpg") no-repeat center;
 	background-size: cover;
 	height: 100vh;
+	padding-top: 1rem;
+}
+
+.home h1 {
+	display: none;
 }
 
 /*General Header*/
@@ -137,16 +146,18 @@ header {
 	position: relative;
 }
 
-.home-header {
-	padding-top: 1rem;
+.other-header {
+	padding: 1rem 0;
+	background-color: grey;
+	color: white;
+	height: 15rem;
 }
 
-h1, .space-title { 
-	font-size: 2rem;
-}
 
-span {
-	display: block;
+.space-title-placeholder {
+	color: #FFF;
+	float: left;
+	font-size: 1rem;
 }
 
 .social-media {
@@ -155,7 +166,7 @@ span {
 
 .social-media li {
 	display: inline;
-	padding: 0.5rem;
+	padding: 0 0.5rem
 }
 
 nav {
@@ -180,7 +191,6 @@ nav li:last-child {
 }
 
 nav a {
-	color: black;
 	font-size: 1rem;
 }
 
