@@ -1,9 +1,16 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: FEWD FILL THIS [SPACE]
+Author: MATKINSON
 */
+
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rokkitt', serif;
+font-family: 'Cormorant Garamond', serif;*/
+/*font-family: 'Cinzel', serif;*/
 
 
 /******************************************
@@ -34,17 +41,35 @@ Developer @GA in NYC
 html {
 	font-size: 20px;
 }
-
-
 /*body {
 
 }
 
 footer {*/
 
-/*img {
-	max-width: 100%;
-}*/
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+h1, h2, a, p {
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.space-title {
+	font-family: 'Roboto Mono', monospace;
+}
+
+nav a {
+	font-family: 'Cormorant Garamond', serif;
+	text-transform: uppercase;
+}
+
+
 
 
 /******************************************
@@ -59,24 +84,109 @@ footer {*/
   	max-width: 95%;
 }
 
-.home_header {
-	height: 100vh;
+.teasers {
+	padding: 1.25%;
+}
+
+.teasers li {
+	float: left;
+}
+
+.teasers-block {
+	height: 0;
+	margin: 1.25%;
+	padding-bottom: 97.5%;
+	width: 97.5%;
+	border: 1px solid;
+}
+
+.teasers-small-block {
+	height: 0;
+	margin: 1.25%;
+	padding-bottom: 47.5%;
+	width: 47.5%;
+	border: 1px solid;
+	
+	
+}
+
+.big-teaser-content {
+
+}
+
+.big-teaser-content, .small-teaser-content {
+	padding: 1rem;	
 }
 
 
 /******************************************
-/* ADDITIONAL STYLES
+/* HEADER STYLES
 /*******************************************/
 
-.home_header {
+/*Home Page Header*/
+
+.home-header {
 	background: url("../images/flags.jpg") no-repeat center;
 	background-size: cover;
+	height: 100vh;
 }
 
-.social_media li {
-	display: inline;
+/*General Header*/
+
+header {
+	position: relative;
+}
+
+.home-header {
+	padding-top: 1rem;
+}
+
+h1, .space-title { 
+	font-size: 2rem;
+}
+
+span {
+	display: block;
+}
+
+.social-media {
 	float: right;
-/
+}
+
+.social-media li {
+	display: inline;
+	padding: 0.5rem;
+}
+
+nav {
+	text-align: center;
+	position: absolute;
+	bottom: 1rem;
+	left: 5%;
+	width: 90%;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 3rem;
+}
+
+nav li:first-child {
+	padding-left: 0;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+
+nav a {
+	color: black;
+	font-size: 1rem;
+}
+
+
+
+
 /*header .homepage {
 	background-image: url("../images/header_bg.jpg");
 	background-size: cover;
@@ -222,11 +332,17 @@ footer a {
 }
 */
 
+footer {
+	background-color: #000;
+}
+
 .copyright {
-	color: white;
+	color: #FFF;
 	font-weight: 600;
 	text-align: center;
 	font-size: 15px;
+	padding: 1rem 0;
+
 }
 
 /******************************************
