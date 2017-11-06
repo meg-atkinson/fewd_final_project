@@ -61,7 +61,7 @@ img {
 /* FONT STYLES
 /*******************************************/
 
-h1, h2, a, p, .space-title-placeholder, footer {
+h1, a, p, .space-title-placeholder, footer {
 	font-family: 'Cormorant Garamond', serif;
 }
 
@@ -70,8 +70,12 @@ span {
 }
 
 nav a {
-	font-family: 'Lora', serif;
+	font-family: 'Open Sans', serif;
 	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Open Sans';
 }
 
 
@@ -98,10 +102,12 @@ nav a {
 }
 
 .teasers-block, .teasers-small-block {
-	height: 0;
-	margin: 1.25%;
 	background: no-repeat center;
 	background-size: cover;
+	height: 0;
+	margin: 1.25%;
+	position: relative;
+
 }
 
 .teasers-block {
@@ -119,7 +125,22 @@ nav a {
 }
 
 .big-teaser-content, .small-teaser-content {
+	
 	padding: 1rem;
+	
+}
+
+
+.big-teaser-content h2, .small-teaser-content h2 {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sliding-text {
+	bottom: 1rem;
+	position: absolute;
 }
 
 
@@ -194,169 +215,35 @@ nav a {
 	font-size: 1rem;
 }
 
-
-
-
-/*header .homepage {
-	background-image: url("../images/header_bg.jpg");
-	background-size: cover;
-	padding: 40px;
-}
-
-.intro {
-	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
-	background-size: cover;
-}
-
-h1 {
-	font-weight: 800;
-	color: white;
-	float: left;
-	margin: 0;
-}
+/******************************************
+/* TEASER STYLES
+/*******************************************/
 
 h2 {
-	font-weight: 600;
-	text-align: center;
-	color: white;
-	margin: 0 auto;
-	padding: 110px 0 70px;
-}
-
-h3 {
-	font-weight: 600;
-	color: #033048;
-	margin: 0;
+	color: #FFF;
 }
 
 p {
-	font-weight: 300;
+	color: #FFF;
 }
 
-ul {
-	font-weight: 300;
-	padding: 0;
-}
 
-a {
-	text-decoration: none;
-	display: block;
-	text-align: center;
-	width: 20%;
-	margin: 0 auto;
-	font-weight: 800;
-	border-radius: 5px;
-}
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
 
-a:hover {
-	opacity: 0.5;
-}
-
-.yellow-button {
-	margin: 0 auto;
-	padding: 20px 0;
-}
-
-.yellow-button a {
-	display: block;
-	text-align: center;
-	width: 25%;
-	margin: 0 auto;
-	font-size: 16px;
-	padding: 10px 30px;
-	background-color: #f9e42e;
-	color: #033048;
-}
-
-.description {
-	background-color: #f0efef;
-	padding: 50px 0;
-}
-
-.description p {
-	color: #606161;
-}
-
-.description ul {
-	padding-left: 84px;
-	color: #606161;
-}
-
-.testimonial {
-	padding: 50px;
-}
-
-.testimonial p:first-child {
-	font-weight: 300;
-	font-style: italic;
-	font-size: 20px;
-	text-align: center;
-	max-width: 50%;
-	margin: 0 auto;
-	color: white;
-}
-
-.testimonial p:last-child {
-	font-weight: 600;
-	font-size: 20px;
-	text-align: center;
-	max-width: 50%;
-	margin: 0 auto;
-	color: white;
-}
-
-.bottom-button {
-	background-color: #f9e42e;
-	padding: 20px 0;
-}
-
-.bottom-button a {
-	background-color: #033048;
-	padding: 10px 30px;
-	color: white;
-	width: 25%;
-	margin: 0 auto;
-}
-
-h4 {
-	font-weight: 800;
-	text-align: center;
-	color: #f9e42e;
-	font-size: 2em;
-	margin: 0 auto;
-}
-
-footer ul {
-	text-align: center;
-	list-style-type: none;
-}
-
-footer li {
-	display: inline-block;
-	font-size: 30px;
-}
-
-footer a {
-	color: white;
-	width: 40px;
-}
-*/
-
-footer {
-	background-color: #000;
-}
 
 .copyright {
-	color: #FFF;
+	color: #000;
 	font-weight: 600;
 	text-align: center;
 	font-size: 15px;
-	padding: 1rem 0;
+	padding-bottom: 1rem;
 
 }
 
 /******************************************
-/* BLOG STYLES
+/* ABOUT PAGE STYLES
 /*******************************************/
 
 
