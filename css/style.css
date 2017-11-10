@@ -94,26 +94,17 @@ h2 {
 	padding: 1.25%;
 }
 
-.teasers li {
-	float: left;
-}
-
 .teasers-block, .teasers-small-block {
 	background: no-repeat center;
 	background-size: cover;
 	height: 0;
-	margin: 1.25%;
+	margin: 2.5%;
 	position: relative;
 }
 
-.teasers-block {
-	padding-bottom: 97.5%;
-	width: 97.5%;
-}
-
-.teasers-small-block {
-	padding-bottom: 47.5%;
-	width: 47.5%;	
+.teasers-block, .teasers-small-block {
+	padding-bottom: 95%;
+	width: 95%;
 }
 
 .big-teaser-content, .small-teaser-content {	
@@ -145,8 +136,7 @@ h2 {
 	height: 100vh;
 	padding-top: 1rem;
 }
-
-.home h1 {
+/*home*/ h1 {
 	display: none;
 }
 
@@ -160,7 +150,7 @@ header {
 	padding: 1rem 0;
 	background-color: grey;
 	color: white;
-	height: 15rem;
+	/*height: 5rem;*/
 }
 
 
@@ -182,6 +172,7 @@ header {
 .social-media li:last-child {
 	padding-right: 0;
 }
+
 
 nav {
 	text-align: center;
@@ -207,6 +198,10 @@ nav li:last-child {
 
 nav a {
 	font-size: 1rem;
+}
+
+span a {
+	border-bottom: solid white 3px;
 }
 
 .fa-bars {
@@ -271,6 +266,29 @@ p {
 /******************************************
 /* RESPONSIVE STYLES
 /*******************************************/
+
+@media screen and (min-width: 665px) {
+
+	.teasers li {
+		float: left;
+	}
+
+	.teasers-block {
+		padding-bottom: 97.5%;
+		width: 97.5%;
+	}
+
+	.teasers-small-block {
+		padding-bottom: 47.5%;
+		width: 47.5%;	
+	}
+
+
+
+	.teasers-block, .teasers-small-block {
+	margin: 1.25%;	
+
+}
 
 @media screen and (min-width: 755px) {
 
