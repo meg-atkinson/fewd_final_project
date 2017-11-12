@@ -90,11 +90,11 @@ h2 {
   	max-width: 90%;
 }
 
-.teasers {
+.teasers, .bios {
 	padding: 1.25%;
 }
 
-.teasers-block, .teasers-small-block {
+.teasers-block, .teasers-small-block, .bio-block, .about-block {
 	background: no-repeat center;
 	background-size: cover;
 	height: 0;
@@ -102,12 +102,12 @@ h2 {
 	position: relative;
 }
 
-.teasers-block, .teasers-small-block {
+.teasers-block, .teasers-small-block, .bio-block, .about-block {
 	padding-bottom: 95%;
 	width: 95%;
 }
 
-.big-teaser-content, .small-teaser-content {	
+.big-teaser-content, .small-teaser-content, .bio-block-content, .about-block-content {	
 	padding: 0.5rem;	
 }
 
@@ -118,8 +118,13 @@ h2 {
 	transform: translate(-50%, -50%);
 }
 
-.sliding-text {
+.sliding-text, {
 	bottom: 1rem;
+	position: absolute;
+}
+
+.bio-block-content {
+	bottom: 0.5rem;
 	position: absolute;
 }
 
@@ -135,6 +140,7 @@ h2 {
 	background-size: cover;
 	height: 100vh;
 	padding-top: 1rem;
+	position: relative;
 }
 /*home*/ h1 {
 	display: none;
@@ -142,15 +148,14 @@ h2 {
 
 /*General Header*/
 
-header {
+/*header {
 	position: relative;
-}
+}*/
 
 .other-header {
 	padding: 1rem 0;
-	background-color: grey;
+	background-color: #3b3d3f;
 	color: white;
-	/*height: 5rem;*/
 }
 
 
@@ -173,13 +178,19 @@ header {
 	padding-right: 0;
 }
 
+.home-nav-bar {
+	bottom: 1rem;
+	left: 5%;
+	position: absolute;
+	width: 90%;
+}
+
+.nav-bar {
+
+}
 
 nav {
 	text-align: center;
-	position: absolute;
-	bottom: 1rem;
-	left: 5%;
-	width: 90%;
 	display: none;
 }
 
@@ -197,15 +208,20 @@ nav li:last-child {
 }
 
 nav a {
+	color: #3b3d3f;
 	font-size: 1rem;
 }
 
 span a {
-	border-bottom: solid white 3px;
+	border-bottom: solid #3b3d3f 3px;
 }
 
 .fa-bars {
 	color: #FFF;
+}
+
+.nav-bar {
+	clear: both;
 }
 
 /******************************************
@@ -234,7 +250,7 @@ p {
 	color: #000;
 	font-weight: 600;
 	text-align: center;
-	font-size: 15px;
+	font-size: 0.75rem;
 	padding-bottom: 1rem;
 
 }
@@ -264,6 +280,36 @@ p {
 }
 
 /******************************************
+/* ABOUT PAGE STYLES
+/*******************************************/
+
+.about-block {
+	background-color: #10425d;
+}
+
+.bio-block:nth-child(3n+1) {
+	background-color: #278ba0;
+}
+
+.bio-block:nth-child(3n+2) {
+	background-color: #d37c96;
+}
+
+.bio-block:nth-child(3n+3) {
+	background-color: #79bc50;
+}
+
+.bio-block h2 {
+	padding-bottom: 0.5rem;
+}
+
+.bio-block .social-media {
+	padding-top: 0.5rem;
+}
+
+
+
+/******************************************
 /* RESPONSIVE STYLES
 /*******************************************/
 
@@ -283,11 +329,9 @@ p {
 		width: 47.5%;	
 	}
 
-
-
 	.teasers-block, .teasers-small-block {
 	margin: 1.25%;	
-
+	}
 }
 
 @media screen and (min-width: 755px) {
@@ -295,17 +339,58 @@ p {
 	.container {
 		max-width: 95%;
 	}
+
+	.bio-block {
+	float:left;
+	padding-bottom: 30.83333333333333%;
+	width: 30.83333333333333%;
+	}
+
+	.about-block {
+		padding-bottom: 97.5%;
+		width: 97.5%;
+	}
+
+	.bio-block, .about-block {
+	margin: 1.25%;
+	}
 }
 
 @media screen and (min-width: 968px) {
 
+	.other-header {
+	padding: 1rem  0 0;
+	}
+
+
+	.social-media {
+		padding-bottom: 1rem;
+	}
+
+	.fa-bars {
+		display: none;
+	}
+
 	nav {
 	display: inline-block;
-	text-align: center;
-	position: absolute;
-	bottom: 1rem;
-	left: 5%;
-	width: 90%;
+	}
+
+	.nav-bar {
+		background-color: #FFF;
+		padding: 1rem 0;
+		text-align: center;
+	}
+
+	.home-nav-bar {
+		position: absolute;
+		bottom: 1rem;
+		left: 5%;
+		text-align: center;
+		width: 90%;
+	}
+
+	.teasers, .bios {
+		padding-top: 0;
 	}
 
 	nav li {
@@ -324,10 +409,10 @@ p {
 		font-size: 1rem;
 	}
 
-	.fa-bars {
-		display: none;
-	}
+
+
 }
+
 
 
 
