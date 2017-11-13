@@ -41,11 +41,6 @@ font-family: 'Cormorant Garamond', serif;*/
 html {
 	font-size: 20px;
 }
-/*body {
-
-}
-
-footer {*/
 
 a {
 	text-decoration: none;
@@ -65,7 +60,7 @@ h1, a, p, .space-title-placeholder, footer {
 	font-family: 'Cormorant Garamond', serif;
 }
 
-span {
+span  {
 	font-family: 'Roboto Mono', monospace;
 }
 
@@ -139,25 +134,43 @@ h2 {
 	background: url("../images/kyoto.jpg") no-repeat center;
 	background-size: cover;
 	height: 100vh;
-	padding-top: 1rem;
 	position: relative;
 }
-/*home*/ h1 {
-	display: none;
+
+.home-header .top-bar {
+	background-color: rgba(59, 61, 63, 0.8);
+}
+
+.home-nav-bar {
+	bottom: 1rem;
+	left: 5%;
+	position: absolute;
+	width: 90%;
+}
+
+.home-header nav a {
+	color: #FFF;
+	font-size: 1rem;
+}
+
+.home-header span a {
+	border-bottom: solid #FFF 3px;
 }
 
 /*General Header*/
 
-/*header {
-	position: relative;
-}*/
+h1 {
+	display: none;
+}
 
 .other-header {
-	padding: 1rem 0;
-	background-color: #3b3d3f;
 	color: white;
 }
 
+.top-bar {
+		background-color: rgba(59, 61, 63, 1);
+		padding: 1rem 0;
+}
 
 .space-title-placeholder {
 	color: #FFF;
@@ -174,19 +187,13 @@ h2 {
 	padding: 0 0.5rem
 }
 
+
+.social-media li:nth-child(-n+3) {
+	display: none;
+}
+
 .social-media li:last-child {
 	padding-right: 0;
-}
-
-.home-nav-bar {
-	bottom: 1rem;
-	left: 5%;
-	position: absolute;
-	width: 90%;
-}
-
-.nav-bar {
-
 }
 
 nav {
@@ -207,13 +214,13 @@ nav li:last-child {
 	padding-right: 0;
 }
 
-nav a {
-	color: #3b3d3f;
+.other-header nav a {
+	color: rgb(59, 61, 63);
 	font-size: 1rem;
 }
 
-span a {
-	border-bottom: solid #3b3d3f 3px;
+.other-header span a {
+	border-bottom: solid rgb(59, 61, 63) 3px;
 }
 
 .fa-bars {
@@ -223,6 +230,8 @@ span a {
 .nav-bar {
 	clear: both;
 }
+
+
 
 /******************************************
 /* TEASER STYLES
@@ -252,8 +261,31 @@ p {
 	text-align: center;
 	font-size: 0.75rem;
 	padding-bottom: 1rem;
-
 }
+
+.small-mobile-footer {
+	text-align: center;
+}
+
+.small-mobile-footer li {
+	display: inline-block;
+	margin: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.small-mobile-footer .fa {
+
+  	border-radius: 50%;
+  	font-size: 0.5rem;
+  	padding: 0.5rem;
+  	text-align: center;
+  	width: 1.5rem;
+}
+	
+.small-mobile-footer a {
+	background-color: #10425d;
+	color: white;
+	}
+
 
 /******************************************
 /* THEME LIST PAGE STYLES
@@ -313,6 +345,19 @@ p {
 /* RESPONSIVE STYLES
 /*******************************************/
 
+
+@media screen and (min-width: 414px) {
+
+/*General Header*/
+
+	.social-media li:nth-child(-n+3) {
+		display: inline-block;
+	}
+
+	.small-mobile-footer {
+	display: none;
+	}
+
 @media screen and (min-width: 665px) {
 
 	.teasers li {
@@ -358,17 +403,13 @@ p {
 
 @media screen and (min-width: 968px) {
 
-	.other-header {
-	padding: 1rem  0 0;
-	}
 
-
-	.social-media {
-		padding-bottom: 1rem;
-	}
-
-	.fa-bars {
+	.social-media li:last-child {
 		display: none;
+	}
+
+	.social-media li:nth-child(3) {
+		padding-right: 0;
 	}
 
 	nav {
@@ -408,8 +449,6 @@ p {
 	nav a {
 		font-size: 1rem;
 	}
-
-
 
 }
 
