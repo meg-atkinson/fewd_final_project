@@ -244,6 +244,8 @@ nav li:last-child {
 
 .fa-bars {
 	color: #FFF;
+	position: relative;
+	z-index: 99999;
 	
 }
 
@@ -271,12 +273,16 @@ nav li:last-child {
 	top: 20px;
 	overflow-y: scroll;
 	border: none;
-	background: black;
+/*	background: black;*/
 	text-indent: 200%;
-	color: transparent;
-	outline: none;
+	color: white;
+/*	outline: none;*/
 	z-index: 1000;
 }
+
+/*.fa-times {
+	color: white;
+}*/
 
 /* Menu style */
 .overlay .nav2 {
@@ -285,9 +291,13 @@ nav li:last-child {
 	top: 50%;
 	height: 60%;
 	line-height: 1.5;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+.nav2 span a {
+	border-bottom: solid 3px white;
 }
 
 .overlay ul {
@@ -374,8 +384,12 @@ p {
 	color: #FFF;
 }
 
+
+
 .sliding-text {
 	display: none;
+	height: 90vw;
+	width: 90vw;
 }
 
 
@@ -446,9 +460,6 @@ p {
 	justify-content: space-around;*/
 }
 
-.theme h2 {
-/*	display: none;*/
-}
 
 .theme-titles a {
 	flex-grow: 1;
@@ -478,7 +489,6 @@ p {
 	justify-content: space-around;
 	height: 90vw;
 	width: 90vw; 
-/*	visibility: hidden;*/
 }
 
 
@@ -528,6 +538,10 @@ p {
 
 	.small-mobile-footer {
 	display: none;
+	}
+
+	.overlay .nav2 {
+		font-size: 2.5rem;
 	}
 
 @media screen and (min-width: 665px) {
@@ -633,9 +647,17 @@ p {
 
 }
 
+/****************/
+/*Min Height Overlay Correct*/
+/****************/
 
+@media screen and (max-height: 512px) {
 
+	.overlay {
+		overflow: scroll;
+	}
 
+}
 
 
 
