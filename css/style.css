@@ -87,49 +87,46 @@ h2 {
 }
 
 .teasers, .bios {
-	clear: both;
-	padding: 1.25%;
-	padding-top: calc(60px + 2%);
+	display: flex;
+	flex-flow: row wrap;
+	padding: 2.5vw;
+	padding-bottom: 1.25vw;
+	padding-top: calc(60px + 2.5vw);
 
 }
 
 .home-teasers .teasers {
-	padding-top: 1.25%;
+	padding-top: 2.5%;
 }
+
 
 .teasers-block, .teasers-small-block, .bio-block, .about-block {
 	background: no-repeat center;
 	background-size: cover;
-	height: 0;
-	margin: 2.5%;
-	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 90vw;
+	margin: 2.5vw; 
+	width: 90vw;
 }
 
-.teasers-block, .teasers-small-block, .bio-block, .about-block {
-	padding-bottom: 95%;
-	width: 95%;
-}
 
 .big-teaser-content, .small-teaser-content, .bio-block-content, .about-block-content {	
 	padding: 0.5rem;	
 }
 
-.big-teaser-content h2, .small-teaser-content h2 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
-.sliding-text, {
+/*.sliding-text, {
 	bottom: 1rem;
 	position: absolute;
-}
+}*/
 
-.bio-block-content {
+/*.bio-block-content {
 	bottom: 0.5rem;
 	position: absolute;
-}
+}*/
 
 
 /******************************************
@@ -278,7 +275,7 @@ nav li:last-child {
 	text-indent: 200%;
 	color: transparent;
 	outline: none;
-	z-index: 100;
+	z-index: 1000;
 }
 
 /* Menu style */
@@ -416,7 +413,7 @@ p {
 .small-mobile-footer a {
 	background-color: #10425d;
 	color: white;
-	}
+}
 
 
 /******************************************
@@ -443,10 +440,48 @@ p {
 	background-color: #05210f;
 }
 
-.theme-titles {
-
-	width: 100%;
+.theme {
+/* 	flex-flow: column nowrap;
+	align-items: stretch;
+	justify-content: space-around;*/
 }
+
+.theme h2 {
+/*	display: none;*/
+}
+
+.theme-titles a {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.theme-titles a:nth-child(1) {
+	background-color: rgba(255, 255, 255, 0.667);
+	border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+.theme-titles a:nth-child(2) {
+	background-color: rgba(255, 255, 255, 0.333);
+	border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+.theme-titles a:nth-child(3) {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.theme-titles {
+	display: none;
+ 	flex-flow: column nowrap;
+	align-items: stretch;
+	justify-content: space-around;
+	height: 90vw;
+	width: 90vw; 
+/*	visibility: hidden;*/
+}
+
+
 
 /******************************************
 /* ABOUT PAGE STYLES
@@ -497,23 +532,31 @@ p {
 
 @media screen and (min-width: 665px) {
 
-	.teasers li {
-		float: left;
+	.teasers, .bios {
+		padding: 1.25vw;
+		padding-top: calc(60px + 1.25vw);
 	}
 
 	.teasers-block {
-		padding-bottom: 97.5%;
-		width: 97.5%;
+		height: 95vw;
+		width: 95vw;
 	}
 
+
 	.teasers-small-block {
-		padding-bottom: 47.5%;
-		width: 47.5%;	
+		height: 46.25vw;
+		width: 46.25vw;
 	}
 
 	.teasers-block, .teasers-small-block {
-	margin: 1.25%;	
+		margin: 1.25%;	
 	}
+
+	.theme-titles {
+		height: 46.25vw;
+		width: 46.25vw;
+}
+
 }
 
 @media screen and (min-width: 755px) {
@@ -522,7 +565,7 @@ p {
 		max-width: 95%;
 	}
 
-	.bio-block {
+/*	.bio-block {
 	float:left;
 	padding-bottom: 30.83333333333333%;
 	width: 30.83333333333333%;
@@ -535,7 +578,8 @@ p {
 
 	.bio-block, .about-block {
 	margin: 1.25%;
-	}
+	}*/
+
 }
 
 @media screen and (min-width: 968px) {
@@ -568,7 +612,7 @@ p {
 	}
 
 	.teasers, .bios {
-		padding-top: 0;
+		padding-top: calc(120px);
 	}
 
 	nav li {

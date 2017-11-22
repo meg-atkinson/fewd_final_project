@@ -64,7 +64,34 @@ $(document).ready(function(){
     }
     
     lastScrollTop = st;
-	}
+	};
+
+
+
+
+
+
+
+
+// // Theme Titles Reveal
+
+	// // Target .theme block on click
+
+	$('.theme').on('click', function () {
+
+		// hide all other theme titles 
+		$('.theme-titles').css('display', 'none');
+		$('h2').css('display', 'block');
+		//show theme titles of block clicked
+		$(this).children('.theme-titles').css('display', 'flex');
+		$(this).children('h2').css('display', 'none');
+	});
+
+
+
+
+
+
 
 
 //Overlay open and close - javascript
